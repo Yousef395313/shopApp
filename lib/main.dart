@@ -5,6 +5,8 @@ import 'package:shop_app/modules/shop_app/on_board/on_board_screen.dart';
 import 'package:shop_app/shared/bloc_observer.dart';
 import 'package:shop_app/shared/styles/themes.dart';
 
+import 'modules/Login/login_screen.dart';
+
 void main() {
   Bloc.observer = MyBlocObserver();
   runApp(ShopApp());
@@ -20,7 +22,7 @@ class ShopApp extends StatelessWidget {
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: ThemeMode.light,
-      home: onBoardScreen(),
+      home: LoginScreen(),
     );
   }
 }

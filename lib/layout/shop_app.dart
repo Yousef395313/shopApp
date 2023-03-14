@@ -15,8 +15,7 @@ class shopAppScreen extends StatelessWidget {
           {
             Navigator.pushAndRemoveUntil(
                 context,
-                MaterialPageRoute(
-                    builder: (context)=>LoginScreen()),
+                MaterialPageRoute(builder: (context)=>LoginScreen()),
                 (route) => false);
           },
             child: Icon(Icons.add)

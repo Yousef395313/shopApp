@@ -52,14 +52,21 @@ class _onBoardScreenState extends State<onBoardScreen> {
       appBar: AppBar(
         actions:
         [
-          TextButton(
-              onPressed: ()
+          defaultTextButton(
+          function:()
               {
-                NavigateToFinish(context,LoginScreen());
+                  NavigateToFinish(context,LoginScreen());
               },
-              child: Text(
-                "SKIP",
-              )),
+              text: 'SKIP'
+          ),
+          // TextButton(
+          //     onPressed: ()
+          //     {
+          //       NavigateToFinish(context,LoginScreen());
+          //     },
+          //     child: Text(
+          //       "SKIP",
+          //     )),
         ],
       ),
       body: Padding(
@@ -96,8 +103,6 @@ class _onBoardScreenState extends State<onBoardScreen> {
             ),
             Row(
               children: [
-                Smooth
-
                 Text(
                   "Indecator",
                 ),
